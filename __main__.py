@@ -10,10 +10,10 @@ import saida
 
 def main():
     lista_numeros = entra.entrada_numeros()
-    operacao = input("\nDigite a operação desejada, sendo + para somar, - para subtrair, / para dividir, * para multiplicar: ")
+    operacao = entra.operacao()
     
     resultado = aritmetico.calcula(lista_numeros, operacao)
-
+    
     if resultado != None:
         saida.imprime(lista_numeros, operacao, resultado)
     
