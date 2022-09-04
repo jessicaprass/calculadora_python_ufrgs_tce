@@ -9,8 +9,7 @@ import aritmetico
 import saida
 
 def main():
-    lista_numeros = entra.entrada_numeros()
-    operacao = entra.operacao()
+    lista_numeros, operacao = entra.entrada_usuario()
     
     resultado = aritmetico.calcula(lista_numeros, operacao)
     
